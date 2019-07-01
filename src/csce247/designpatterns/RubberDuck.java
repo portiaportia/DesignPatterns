@@ -4,6 +4,8 @@ public class RubberDuck extends Duck {
 
 	public RubberDuck(String title) {
 		super(title);
+		flyBehavior = new FlyNoWay();
+		quackBehavior = new Squeak();
 	}
 
 	@Override

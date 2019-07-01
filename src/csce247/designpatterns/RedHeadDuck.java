@@ -4,6 +4,8 @@ public class RedHeadDuck extends Duck {
 
 	public RedHeadDuck(String title) {
 		super(title);
+		flyBehavior = new FlyWithWings();
+		quackBehavior = new Quack();
 	}
 
 	public void display() {

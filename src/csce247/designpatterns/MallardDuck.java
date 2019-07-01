@@ -4,6 +4,8 @@ public class MallardDuck extends Duck {
 	
 	public MallardDuck(String title) {
 		super(title);
+		flyBehavior = new FlyWithWings();
+		quackBehavior = new Quack();
 	}
 
 	public void display() {

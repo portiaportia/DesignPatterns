@@ -4,6 +4,8 @@ public class WoodenDuck extends Duck {
 	
 	public WoodenDuck(String title) {
 		super(title);
+		flyBehavior = new FlyNoWay();
+		quackBehavior = new MuteQuack();
 	}
 
 	@Override

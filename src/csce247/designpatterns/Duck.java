@@ -2,6 +2,8 @@ package csce247.designpatterns;
 
 public abstract class Duck {
 	protected String title;
+	FlyBehavior flyBehavior;
+	QuackBehavior quackBehavior;
 	
 	public Duck(String title) {
 		this.title = title;
@@ -9,15 +11,15 @@ public abstract class Duck {
 	
 	public abstract void display();
 	
+	public void fly() {
+		flyBehavior.fly();
+	}
+	
 	public void quack() {
-		System.out.println("quack quack quack");
+		quackBehavior.quack();
 	}
 	
 	public void swim() {
 		System.out.println("swimming");
-	}
-	
-	public void fly() {
-		System.out.println("flying");
 	}
 }
