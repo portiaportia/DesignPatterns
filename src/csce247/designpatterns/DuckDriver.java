@@ -27,6 +27,9 @@ public class DuckDriver {
 		wood.quack();
 		wood.swim();
 		wood.fly();
+		System.out.println("Making the wooden duck fly");
+		wood.setFlyBehavior(new FlyWithWings());
+		wood.fly();
 	}
 	
 }
