@@ -1,4 +1,4 @@
-package csce247.designpatterns;
+package csce247.strategy;
 
 public class FlyNoWay implements FlyBehavior{
 
