@@ -1,21 +1,13 @@
 package csce247.designpatterns;
 
-public class MallardDuck {
-	private String title;
+public class MallardDuck extends Duck {
 	
 	public MallardDuck(String title) {
-		this.title = title;
+		super(title);
 	}
-	
-	public void quack() {
-		System.out.println("quack quack quack");
-	}
-	
-	public void swim() {
-		System.out.println("swimming");
-	}
-	
+
 	public void display() {
 		System.out.println(title + " is a mallard duck");
 	}
+	
 }
