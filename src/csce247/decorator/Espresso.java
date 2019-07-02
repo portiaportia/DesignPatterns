@@ -3,10 +3,10 @@ package csce247.decorator;
 public class Espresso extends Beverage{
 
 	public Espresso() {
-		this.description = "small but powerfull expresso";
+		this.description = "Espresso";
 	}
 	
 	public double getCost() {
-		return super.getCost() + 1.99;
+		return 1.99;
 	}
 }

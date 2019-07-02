@@ -3,10 +3,10 @@ package csce247.decorator;
 public class DarkRoast extends Beverage {
 	
 	public DarkRoast() {
-		this.description = "aroma fillecd dark roast";
+		this.description = "Dark Roast";
 	}
 	
 	public double getCost() {
-		return super.getCost() + 0.99;
+		return 0.99;
 	}
 }

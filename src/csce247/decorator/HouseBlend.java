@@ -3,10 +3,10 @@ package csce247.decorator;
 public class HouseBlend extends Beverage {
 	
 	public HouseBlend() {
-		this.description = "simple house blend";
+		this.description = "House Blend";
 	}
 	
 	public double getCost() {
-		return super.getCost() + 0.89;
+		return 0.89;
 	}
 }
