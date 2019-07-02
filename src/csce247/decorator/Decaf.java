@@ -7,6 +7,6 @@ public class Decaf extends Beverage{
 	}
 	
 	public double getCost() {
-		return 1.05;
+		return super.getCost() + 1.05;
 	}
 }

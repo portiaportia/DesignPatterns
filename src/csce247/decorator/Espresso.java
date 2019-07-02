@@ -7,6 +7,6 @@ public class Espresso extends Beverage{
 	}
 	
 	public double getCost() {
-		return 1.99;
+		return super.getCost() + 1.99;
 	}
 }
