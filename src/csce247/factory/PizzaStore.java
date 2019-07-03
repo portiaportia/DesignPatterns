@@ -1,16 +1,11 @@
 package csce247.factory;
 
-public class PizzaStore {
-	PizzaFactory factory;
+public abstract class PizzaStore {
+
+	public abstract Pizza createPizza(String type);
 	
-	public PizzaStore(PizzaFactory factory) {
-		this.factory = factory;
-	}
-	
-	public Pizza orderPizza(String pizzaType) {
-		Pizza pizza;
-		
-		pizza = factory.createPizza(pizzaType);
+	public Pizza orderPizza(String type) {
+		Pizza pizza = createPizza(type);
 		
 		pizza.prepare();
 		pizza.bake();
