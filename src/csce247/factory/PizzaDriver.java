@@ -3,7 +3,8 @@ package csce247.factory;
 public class PizzaDriver {
 	
 	public static void main(String[] args) {
-		PizzaStore pizzaStore = new PizzaStore();
+		PizzaFactory factory = new PizzaFactory();
+		PizzaStore pizzaStore = new PizzaStore(factory);
 		
 		Pizza peppPizza = pizzaStore.orderPizza("pepperoni");
 		System.out.println(peppPizza);
