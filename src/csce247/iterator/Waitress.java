@@ -1,10 +1,11 @@
 package csce247.iterator;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class Waitress {
-	private PancakeHouseMenu pancakeHouseMenu;
-	private DinerMenu dinerMenu;
+	private Menu pancakeHouseMenu;
+	private Menu dinerMenu;
  
 	public Waitress() {
 		pancakeHouseMenu = new PancakeHouseMenu();

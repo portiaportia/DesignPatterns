@@ -1,5 +1,7 @@
 package csce247.iterator;
 
+import java.util.Iterator;
+
 public class DinerMenuIterator implements Iterator {
 	private MenuItem[] items;
 	private int position = 0;
