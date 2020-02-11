@@ -11,16 +11,13 @@ public class PancakeHouseMenuIterator implements Iterator {
 	}
 	
 	public MenuItem next() {
+		if(!hasNext())return false;
 		MenuItem menuItem = items.get(position);
 		position = position + 1;
 		return menuItem;
 	}
 	
 	public boolean hasNext() {
-		if(position >= items.size() || items.get(position) == null) {
-			return false;
-		} else {
-			return true;
-		}
+		return items.get(position) != null && position < items.size();
 	}
 }
